@@ -122,7 +122,7 @@
                                         <input type="email" class="form-control" name="email" [ngModel]="typeValidation.email"
                                           required  #email="ngModel" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$">
                                         <small [hidden]="email.valid || (email.pristine && !f2.submitted)" class="text-danger">
-                                          Email is required and format should be <i>john@doe.com</i>.
+                                          /i>.
                                         </small>
                                     </div>
                                     <div class="col-sm-4"><code>email="true"</code></div>
@@ -150,7 +150,7 @@
                                     <div class="col-sm-6">
                                         <input class="form-control" type="text" id="url" required pattern="https?://.+" [(ngModel)]="typeValidation.url" name="url" #url="ngModel">
                                           <small [hidden]="url.valid || (url.pristine && !f2.submitted)" class="text-danger">
-                                            Must be a valid URL!
+                                            
                                           </small>
                                     </div>
                                     <div class="col-sm-4"><code>url="true"</code></div>
@@ -160,29 +160,29 @@
                             <fieldset>
                                 <div class="form-group column-sizing">
                                     <label class="col-sm-2 control-label">
-                                        Equal to
+                                        
                                     </label>
                                     <div class="col-sm-3">
                                         <input type="text" class="form-control" name="idSource" [ngModel]="typeValidation.idSource" placeholder="#idSource"
                                           required validateEqual="idDestination" reverse="true" #idSource="ngModel">
                                         <small [hidden]="idSource.valid || (idSource.pristine && !f2.submitted)" class="text-danger">
-                                          IdSource is required
+                                          
                                         </small>
                                     </div>
                                     <div class="col-sm-3">
                                         <input type="text" class="form-control" name="idDestination" [ngModel]="typeValidation.idDestination" placeholder="#idDestination"
                                           required validateEqual="idSource" reverse="false" #idDestination="ngModel">
                                         <small [hidden]="idDestination.valid || (idDestination.pristine && !f2.submitted)" class="text-danger">
-                                          IdSource mismatch!
+                                          
                                         </small>
                                     </div>
-                                    <div class="col-sm-4"><code>equalTo="#idSource"</code>
+                                    <div class="col-sm-4"><code>"</code>
                                     </div>
                                 </div>
                             </fieldset>
                         </div>
                         <div class="card-footer text-center">
-                            <button type="submit" class="btn btn-info btn-fill">Validate Inputs</button>
+                            <button type="submit" class="btn btn-info btn-fill"></button>
                         </div>
                     </form>
                 </div>
