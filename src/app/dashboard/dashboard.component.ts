@@ -1,3 +1,4 @@
+import { LocalStorageService } from './../local-storage.service';
 import { Component, OnInit } from '@angular/core';
 import Chart from 'chart.js';
 
@@ -13,7 +14,7 @@ export class DashboardComponent implements OnInit {
   public canvas : any;
   public ctx;
   public gradientFill;
-  // constructor(private navbarTitleService: NavbarTitleService) { }
+   constructor(LocalStorageService:LocalStorageService) { }
   public gradientChartOptionsConfiguration: any;
   public gradientChartOptionsConfigurationWithNumbersAndGrid: any;
 
